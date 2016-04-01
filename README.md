@@ -22,3 +22,9 @@ triple
 block
 single
 `
+
+# html entities
+Entity dec: &#177;
+Entity name: &plusmn;
+Entity hex: &#xb1;
+Raw: ±
