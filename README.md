@@ -68,9 +68,9 @@ window.location.assign('/');
 #### with HTML table and HTML pre/code
 <table>
 <tr><th>Old</th><th>New</th></tr>
-<tr><td><pre lang="js"><code>
+<tr><td><pre class="prettyprint source lang-js" lang="js"><code>
 window.location.href = '/';
-</code></pre></td><td><pre lang="js"><code>
+</code></pre></td><td><pre class="prettyprint source lang-js" lang="js"><code>
 window.location.assign('/');
 </code></pre></td></tr>
 </table>
