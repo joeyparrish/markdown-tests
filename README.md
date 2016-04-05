@@ -25,6 +25,52 @@ single
 
 # html entities
 Entity dec: &#177;
+
 Entity name: &plusmn;
+
 Entity hex: &#xb1;
+
 Raw: ±
+
+# code
+```js
+window.location.href = '/';
+```
+
+
+# tables with multiple lines of code
+
+#### closest I could get in markdown, results in multiple rows
+| Status | Response  |
+| ------ | --------- |
+| 200    | `json`                          |
+|        | `   {`                          |
+|        | ` "id": 10,`                    |
+|        | ` "username": "alanpartridge",` |
+|        | ` more code...`                 |
+|        | `}`                             |
+| 400    |                                 |
+
+#### with HTML table
+<table>
+<tr><th>Old</th><th>New</th></tr>
+<tr><td>
+```js
+window.location.href = '/';
+```
+</td><td>
+```js
+window.location.assign('/');
+```
+</td></tr>
+</table>
+
+#### with HTML table and HTML pre/code
+<table>
+<tr><th>Old</th><th>New</th></tr>
+<tr><td><pre lang="js"><code>
+window.location.href = '/';
+</code></pre></td><td><pre lang="js"><code>
+window.location.assign('/');
+</code></pre></td></tr>
+</table>
